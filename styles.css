@@ -1,0 +1,111 @@
+﻿#halfpage-ad *{
+  padding:0; margin:0;border:0;outline:0;
+}
+
+#halfpage-ad .jspContainer{    overflow: hidden;    position: relative;}
+#halfpage-ad .jspPane{    position: absolute;}
+#halfpage-ad .jspVerticalBar{    position: absolute;    top: 0;    right: 0;    width: 11px;    height: 100%;    background: url(http://media.washingtonpost.com/wp-adv/test/mstest/cars_dealer_test/images/track.png) repeat-y top center;}
+/*#halfpage-ad .jspHorizontalBar{    position: absolute;    bottom: 0;    left: 0;    width: 100%;    height: 16px;    background: red;}*/
+#halfpage-ad .jspVerticalBar *, .jspHorizontalBar *{    margin: 0;    padding: 0;}
+#halfpage-ad .jspCap{    display: none;}
+#halfpage-ad .jspHorizontalBar .jspCap{    float: left;}
+#halfpage-ad .jspTrack{    background: url(http://media.washingtonpost.com/wp-adv/test/mstest/cars_dealer_test/images/track.png) repeat-y scroll center top transparent;    position: relative;}
+#halfpage-ad .jspDrag{    background: url(http://media.washingtonpost.com/wp-adv/test/mstest/cars_dealer_test/images/scroller.png) no-repeat scroll 1px 0 transparent;    position: relative;    top: 0;    left: 0;    cursor: pointer;height:10px;}
+#halfpage-ad .jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag{ float: left;    height: 100%; }
+#halfpage-ad .jspArrow{    background: #50506d;text-indent: -20000px;display: block;cursor: pointer;}
+#halfpage-ad .jspArrow.jspDisabled{ cursor: default;background: #80808d; }
+#halfpage-ad .jspVerticalBar .jspArrow{    height: 16px; }
+#halfpage-ad .jspHorizontalBar .jspArrow{ width: 16px;    float: left;    height: 100%; }
+#halfpage-ad .jspVerticalBar .jspArrow:focus{ outline: none; }
+#halfpage-ad .jspCorner{ background: #eeeef4;float: left;height: 100%; }
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner{ margin: 0 -3px 0 0; }
+
+#halfpage-ad{
+  font-family:arial, helvetica, sans-serif;
+  font-size:12px;
+  width:334px;
+  height:848px;
+  overflow:hidden;
+  background-color:#fff;
+  border:1px solid #000;
+  position:relative;
+  text-align:left;
+  margin:0 auto;
+}
+#halfpage-ad #cars_hp_top{
+  padding:10px 9px;
+}
+#halfpage-ad #cars_hp_top_inner{
+  height:130px;
+  width: 316px;
+  display:block;
+  background:url(http://media.washingtonpost.com/wp-adv/test/mstest/cars_dealer_test/images/top_logo.png) scroll no-repeat 0 0 transparent;
+}
+
+#halfpage-ad #cars_hp_address{
+  padding:2px 0;
+  text-align:center;
+  color:#000;
+  font-size:13px;
+  line-height:16px;
+}
+#halfpage-ad #cars_hp_content{
+  height:524px;
+  width:326px;
+  margin:25px 0;
+}
+#halfpage-ad #cars_hp_loading{
+  text-align:center;padding:100px 0;
+}
+#halfpage-ad #cars_hp_bottom{
+  padding:10px 9px 0;
+  position:absolute;
+  top: 788px;
+  left:0;
+}
+#halfpage-ad #cars_hp_bottom_inner{
+  width:316px;
+  height:40px;
+  background: url(http://media.washingtonpost.com/wp-adv/test/mstest/cars_dealer_test/images/bottom.png) scroll no-repeat 0 0 transparent;  
+  display:block;
+  text-indent:-9999px;
+}
+
+#halfpage-ad #loading_spinner {
+  height:90px;
+}
+
+#halfpage-ad .divider {
+  border-top:1px solid #b6b6b6;
+  margin:0 10px;
+}
+
+#halfpage-ad .vehicle {
+  margin:10px 0;
+  padding:0 10px;
+  display:block;
+  color:#000;
+  line-height:13px;
+  text-decoration:none;
+}
+#halfpage-ad .vehicle-big {
+  font-size:13px;
+  font-weight:bold;
+  line-height:normal;
+}
+
+#halfpage-ad .vehicle img, #halfpage-ad .vehicle .badURL{
+  float:left;
+  border:1px solid #fff;
+  margin-right:5px;
+  margin-bottom:11px;
+  width:100px;
+  height:75px;
+  background-color:#fff; 
+}
+
+#halfpage-ad .clear{
+  clear:both;
+}

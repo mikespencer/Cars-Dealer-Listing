@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<title>Cars Dealer Listings Demo</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+</head>
+<body>
+
+  <div id="halfpage-ad" class="template-ad">
+    <div id="cars_hp_top">
+      <a href="http://www.example.com" target="_blank" id="cars_hp_top_inner" class="cars_hp_dealer_ct"></a>
+    </div>
+    <div class="divider"></div>
+    <div id="cars_hp_address"></div>
+    <div class="divider"></div>
+    <div id="cars_hp_content">
+      <div id="cars_hp_loading">
+        <div id="loading_spinner"></div>
+        <div>Loading Content...</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div id="cars_hp_bottom">
+      <a href="http://www.example.com" target="_blank" id="cars_hp_bottom_inner" class="cars_hp_dealer_ct">Click here to see our full inventory</a>
+    </div>
+  </div>
+  
+  
+
+  <script type="text/javascript" src="plugins.js"></script>
+  <script type="text/javascript" src="dealer.js"></script>
+  
+  <script type="text/javascript">
+    var wpAd = window.wpAd || {};
+    wpAd.cars_listings = wpAd.cars_listings || {};
+    wpAd.cars_listings.vars = {
+      dealer_name : '1st Choice Auto',
+        //dealer_name : 'A Plus Motors LLC',
+        //dealer_name : 'Ferrari Maserati Lamborghini of Washington',
+      c : '', //prepended click tracker
+      u : 'http://www.example.com' //clickthrough URL
+    }
+  </script>
+
+</body>
+</html>
